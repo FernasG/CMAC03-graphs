@@ -1,0 +1,9 @@
+services:
+  graphs:
+    build: .
+    container_name: graphs
+    image: graphs:latest
+    environment:
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ${PWD}:/app
